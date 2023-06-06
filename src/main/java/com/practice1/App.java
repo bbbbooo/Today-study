@@ -7,6 +7,6 @@ import java.util.List;
 
 public class App {
     public static void main(String[] args) {
-        GenericTest<Integer> gt = new GenericTest<>();
+
     }
 }
