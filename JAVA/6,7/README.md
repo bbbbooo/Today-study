@@ -28,7 +28,7 @@
 
 1. 클라이언트가 요청을 하면 Servlet 객체가 생성된다.
 2. 서버는 `Init()`을 호출하여 Servlet 객체를 초기화한다. `Init()`메소드는 단 한번만 호출된다.
-3. `Service() 메소드`가 존재하면 Http 메소드를 참고하여 `doGet()`을 호출할지 `doPost()`를 호출할지 결정후 응답을 한다.
+3. `Service() 메소드`가 존재하면 Http 메소드(`get`인지 `post`인지)를 참고하여 `doGet()`을 호출할지 `doPost()`를 호출할지 결정후 응답을 한다.
 4. 응답을 처리하면 `destroy()`를 호출하여 `ServeltRequest`, `ServletResponse` 객체를 소멸시킨다.
 
 
@@ -61,6 +61,8 @@
 
 ### 파싱
     - 문자열을 의미 있는 토큰으로 분리하고 그것들로 이루어진 parse tree를 만듦
+
+<br>
 
 ---
 <br>
