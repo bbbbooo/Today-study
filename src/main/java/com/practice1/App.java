@@ -48,6 +48,17 @@ public class App {
         //역순 정렬을 위해 링크드 리스트로 변환
         stgringlist = new LinkedList<>(stgringlist);
 
+
+
         Iterator<String> dIter = ((LinkedList<String>)stgringlist).descendingIterator();
+
+        // 바로 출력하면 값이 유실되므로 새로운 ArrayList에 저장
+        List<String> descList = new ArrayList<>();
+
+        while(dIter.hasNext()){
+            descList.add(dIter.next());
+        }
+
+        System.out.println("descList = " + descList);
     }
 }
